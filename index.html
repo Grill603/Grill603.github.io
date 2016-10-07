@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+        <title>Grill603 Files</title>
+        <style type="text/css">
+        :root {
+          color: #aab7c6;
+          background-color: #121416;
+          font-family: sans-serif;
+          text-align: center;
+          margin-top: 20%;
+        }
+        hr {
+          outline-color: #333;
+          border-color: #333;
+        }
+        h1, h2, h3, h4 {
+          font-weight: normal;
+          color: #f8c66b;
+        }
+        </style>
+</head>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<hr>
+<h3>Calendars</h3>
+<a id="cal_dl" href="calendars/Grill603_Event_Cal.ics">Download Calendar</a>
+<br>
+<br>
+
+<script type="text/javascript">
+  var cal_dl_a = document.getElementById("cal_dl");
+  var new_url = new URL(cal_dl_a.href);
+  new_url.protocol = "webcal:";
+  var new_a = document.createElement("a");
+  new_a.setAttribute("href", new_url.href);
+  new_a.textContent = "Subscribe To Calendar";
+  document.body.appendChild(new_a);
+</script>
 </body>
 </html>
